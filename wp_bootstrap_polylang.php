@@ -43,7 +43,7 @@ function wp_bootstrap_polylang() {
                 }
             }
 
-            wp_enqueue_script('pll_nav', get_template_directory_uri() . '/assets/js/wp_bootstrap_polylang.js', array(), '1.2.4', true);
+            wp_enqueue_script('pll_nav', get_stylesheet_directory_uri() . '/assets/js/wp_bootstrap_polylang.js', array(), '1.2.4', true);
             wp_localize_script('pll_nav', 'pllVars', array(
                     'postID' => $lang_list
                 )
